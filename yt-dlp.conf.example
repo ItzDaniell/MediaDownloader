@@ -1,0 +1,27 @@
+# yt-dlp configuration file
+# Guardar en: %APPDATA%\yt-dlp\config.txt (Windows)
+# O en la carpeta de la aplicación como: yt-dlp.conf
+
+# Usar cookies de navegador si es disponible
+# --cookies-from-browser firefox
+
+# Permitir descargas inseguras
+no-check-certificate
+
+# No romper descargas parciales
+no-continue
+
+# Reintentos en caso de error
+retries 3
+
+# Socket timeout
+socket-timeout 30
+
+# Número de conexiones simultáneas
+concurrent-fragment-downloads 4
+
+# Formato por defecto para video
+# -f best
+
+# Usar IPv4 (a veces IPv6 causa problemas)
+force-ipv4

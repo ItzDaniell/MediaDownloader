@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Archivo de ejemplo de configuración para desarrolladores -->
+<!-- Este archivo muestra posibles parámetros de configuración futuros -->
+
+<configuration>
+  <appSettings>
+    <!-- Configuración de descargas -->
+    <add key="DefaultDownloadFolder" value="%USERPROFILE%\Downloads\MediaDownloader"/>
+    <add key="DownloadTimeout" value="300000"/> <!-- En milisegundos -->
+    <add key="MaxConcurrentDownloads" value="1"/>
+
+    <!-- Configuración de calidad -->
+    <add key="DefaultFormatYoutube" value="mp3"/>
+    <add key="DefaultFormatX" value="mp4"/>
+    <add key="MP3Quality" value="192"/> <!-- En kbps -->
+
+    <!-- Configuración de UI -->
+    <add key="RememberLastFolder" value="true"/>
+    <add key="ShowNotifications" value="true"/>
+    <add key="ThemeColor" value="#2196F3"/>
+
+    <!-- Configuración de yt-dlp -->
+    <add key="YtDlpPath" value="yt-dlp"/> <!-- Comando en PATH o ruta completa -->
+    <add key="UseUpdateCheck" value="true"/>
+
+    <!-- Logging -->
+    <add key="EnableLogging" value="false"/>
+    <add key="LogFile" value="logs/app.log"/>
+    <add key="LogLevel" value="Info"/> <!-- Debug, Info, Warning, Error -->
+  </appSettings>
+
+  <!-- Plataformas soportadas -->
+  <platforms>
+    <platform name="YouTube">
+      <domain>youtube.com</domain>
+      <domain>youtu.be</domain>
+      <formats>
+        <format name="mp3" description="Extraer audio como MP3"/>
+        <format name="mp4" description="Descargar video como MP4"/>
+      </formats>
+    </platform>
+
+    <platform name="X">
+      <domain>twitter.com</domain>
+      <domain>x.com</domain>
+      <formats>
+        <format name="mp3" description="Extraer audio como MP3"/>
+        <format name="mp4" description="Descargar video como MP4"/>
+      </formats>
+    </platform>
+  </platforms>
+
+  <!-- Configuración de estilos -->
+  <styles>
+    <color name="Primary" value="#2196F3"/>
+    <color name="Success" value="#4CAF50"/>
+    <color name="Warning" value="#FF9800"/>
+    <color name="Error" value="#F44336"/>
+    <color name="Background" value="#F5F5F5"/>
+    <color name="Text" value="#333333"/>
+    <color name="Border" value="#DDDDDD"/>
+  </styles>
+</configuration>

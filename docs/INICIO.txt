@@ -1,0 +1,70 @@
+# INSTALACIÓN RÁPIDA
+
+## Paso 1: Instalar Python
+
+Ve a: **https://www.python.org/downloads/**
+
+- Descarga Python 3.11 o superior
+- **IMPORTANTE**: Marca la opción "Add Python to PATH"
+- Instala
+- Reinicia tu computadora
+
+## Paso 2: Instalar yt-dlp
+
+Ejecuta: `install-ytdlp.bat`
+
+O manualmente en PowerShell/CMD:
+```bash
+pip install yt-dlp
+```
+
+## Paso 3: Ejecutar la aplicación
+
+```bash
+dotnet build
+dotnet run
+```
+
+---
+
+## Si aún falta algo
+
+Si ves "pip no encontrado" o "Python no encontrado":
+
+### Opción 1: Instalar Python completo
+```bash
+# Ejecuta este script que instala todo automáticamente:
+install-all.bat
+```
+
+### Opción 2: Instalar Python manualmente
+1. Descarga Python desde: https://www.python.org/downloads/
+2. **MARCA**: "Add Python to PATH"
+3. Instala
+4. Reinicia computadora
+5. Abre PowerShell/CMD y ejecuta:
+   ```bash
+   pip install yt-dlp
+   ```
+
+### Opción 3: Verificar instalación
+```bash
+# En PowerShell o CMD, ejecuta:
+python --version
+pip --version
+yt-dlp --version
+```
+
+Si alguno no funciona, Python no está en PATH. Reinstala Python y marca "Add Python to PATH".
+
+---
+
+## ¿Aún no funciona?
+
+Ejecuta esto en PowerShell (como administrador):
+```powershell
+python -m pip install --upgrade pip
+pip install yt-dlp
+```
+
+Luego cierra y vuelve a abrir PowerShell.

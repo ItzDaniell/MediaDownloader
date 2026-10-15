@@ -1,0 +1,32 @@
+# Visual Studio cache and personal settings
+.vs/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Build results and compiled outputs
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+dist/
+publish/
+
+# Binaries, libraries and debug symbols
+*.exe
+*.dll
+*.pdb
+
+# NuGet packages
+*.nupkg
+packages/
+
+# Temporary files and logs
+*.log
+*.tmp
+
+# Operating system files
+Thumbs.db
+Desktop.ini
+.DS_Store
